@@ -1,0 +1,238 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Menu</title>
+    <style>
+      body {
+          font-family: Arial, sans-serif;
+          margin: 0;
+          padding: 0;
+          background-color: #f5f5f5;
+          color: #1fb2ed;
+      }
+      header {
+          background-color: #1de0d3;
+          color: #ffcc00;
+          padding: 20px 0;
+          text-align: center;
+          margin-bottom: 20px;
+      }
+      h1 {
+          margin: 0;
+          font-size: 36px;
+      }
+      nav {
+          background-color: #16b0d6;
+          padding: 10px;
+          text-align: center;
+          margin-bottom: 20px;
+      }
+      nav a {
+          color: #ffcc00;
+          text-decoration: none;
+          padding: 0 10px;
+          transition: color 0.3s ease;
+      }
+      nav a:hover, nav a:active {
+          color: #fff;
+      }
+      section {
+          padding: 20px;
+          background-color: #fff;
+          border-radius: 8px;
+          box-shadow: 0 0 10px rgba(0,0,0,0.1);
+          margin-bottom: 20px;
+      }
+      h2 {
+          color: #1ccae1;
+          border-bottom: 2px solid #17c6e4;
+          padding-bottom: 10px;
+          margin-bottom: 20px;
+          text-align: center;
+      }
+      h3 {
+          margin: 0;
+          font-size: 20px;
+          color: #1cd5e6;
+      }
+      p {
+          margin: 5px 0;
+          font-size: 16px;
+          color: #1ebcec;
+      }
+      footer {
+          background-color: #1ec8ea;
+          color: #ffffff;
+          text-align: center;
+          padding: 10px;
+          position: fixed;
+          bottom: 0;
+          width: 100%;
+      }
+      .price {
+          font-weight: bold;
+          color: red;
+      }
+      .choose-website select {
+          padding: 8px;
+          border: none;
+          border-radius: 5px;
+          background-color: #19c1e3;
+          color: #fff;
+          font-size: 16px;
+          cursor: pointer;
+          transition: background-color 0.3s ease;
+      }
+      .choose-website select:hover {
+          background-color: #18c4eb;
+      }
+      .choose-website:hover select {
+          background-color: #1eeaea;
+      }
+    @media only screen and (max-width: 768px) {
+      .menu-item {
+          display: block;
+      }
+    }
+    
+    @media only screen and (max-width: 480px) {
+      h1 {
+          font-size: 24px;
+      }
+    
+      h2 {
+          font-size: 20px;
+      }
+    
+      p {
+          font-size: 14px;
+      }
+    
+      .menu-item {
+          padding: 15px;
+      }
+    }
+    .img{
+      width: 100px;
+      height: 100px;
+    }
+</style>    
+</head>
+<body>
+  <nav>
+    <ul>
+        <li><a href="home.html">Home</a></li>
+        <li><a href="orario.html">orario</a></li>
+    </ul>
+</nav>
+
+</head>
+<body>
+<nav>
+  <a href="#antipasti">pasti aperitivi</a>
+  <a href="#nigiri">Nigiri</a>
+  <a href="#bibite">bibita</a>
+  <a href="#dessert">Dessert</a>
+</nav>
+<section id="antipasti">
+  <h2>pasti aperitivi</h2>
+      <div>
+          <h3>Sushi di prosciutto Cotto Naturì</h3>
+          <p>con lattuga, riso, maionese </p>
+          <p class="price">€5.00</p>
+      </div>
+      <div>
+          <h3>Wakame</h3>
+          <p>alghe fresche con peperoncino e sesamo</p>
+          <p class="price">€5.00</p>
+      </div>
+      <div>
+          <h3>Tempura di Verdure</h3>
+          <p>Vegetali freschi ricoperti di pastella e fritti</p>
+          <p class="price">€4.50</p>
+      </div>
+      <div>
+          <h3>Tartare di Tonno</h3>
+          <p>Tonno fresco tagliato a dadini con condimenti</p>
+          <p class="price">€5.00</p>
+      </div>
+      <div>
+          <h3>Tataki di Salmone</h3>
+          <p>Salmone fresco scottato leggermente e marinato</p>
+          <p class="price">€8.00</p>
+      </div>
+      <div>
+          <h3>Kanisu</h3>
+          <p>Tartare di granchio artico con salsa a base di aceto</p>
+          <p class="price">€4.00</p>
+      </div>
+</section>
+<section id="nigiri">
+  <h2>Nigiri</h2>
+      <div>
+          <h3>Salmone Nigiri</h3>
+          <p>Nigiri di salmone fresco</p>
+          <p class="price">€3.00</p>
+      </div>
+      <div>
+          <h3>Gambero Nigiri</h3>
+          <p>Nigiri di gambero fresco</p>
+          <p class="price">€3.00</p>
+      </div>
+      <div>
+          <h3>Tonno Nigiri</h3>
+          <p>Tonno fresco su cuscino di riso</p>
+          <p class="price">€3.00</p>
+      </div>
+      <div>
+          <h3>Agrumi Nigiri</h3>
+          <p>Assortimento di agrumi su cuscino di riso</p>
+          <p class="price">€3.00</p>
+      </div>
+</section>
+<section id="bibite">
+  <h2>bibite</h2>
+      <div>
+          <h3>Acqua Minerale</h3>
+          <p>da 500ml </p>
+          <p class="price">€2.00</p>
+      </div>
+      <div>
+          <h3>Birra</h3>
+          <p>da 330ml</p>
+          <p class="price">€3.00</p>
+      </div>
+      <div>
+          <h3>vino bianco </h3>
+          <p>da 250ml</p>
+          <p class="price">€4.00</p>
+      </div>
+      <div>
+          <h3>Tè Verde</h3>
+          <p>330ml</p>
+          <p class="price">€2.50</p>
+      </div>
+      <div>
+          <h3>coca cola</h3>
+          <p>330ml</p>
+          <p class="price">€2.50</p>
+      </div>
+</section>
+<section id="dessert">
+  <h2>Desserto</h2>
+      <div>
+          <h3>Gelato</h3>
+          <p>gusti diversi</p><a href="./gelato.jpg">foto</a>
+          <p class="price">€5.00</p>
+      </div>
+      <div>
+          <h3>Tiramisù</h3>
+          <a href="./tiramisu.jpg" class="img">foto</a>
+          <p class="price">€4.00</p>
+      </div>
+</section>
+
+</body>
+</html>
